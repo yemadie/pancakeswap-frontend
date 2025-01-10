@@ -1,0 +1,38 @@
+{
+  "name": "@pancakeswap/gauges",
+  "version": "1.2.15",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest --run",
+    "typechecks": "tsc --noEmit -p ./tsconfig.json"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@pancakeswap/sdk": "workspace:^",
+    "@pancakeswap/position-managers": "workspace:^",
+    "@types/lodash": "^4.14.202",
+    "lodash": "^4.17.21",
+    "tsup": "^6.7.0"
+  },
+  "dependencies": {
+    "@pancakeswap/chains": "workspace:^",
+    "@pancakeswap/tokens": "workspace:^",
+    "@pancakeswap/v3-sdk": "workspace:^",
+    "viem": "catalog:"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "name": "@pancakeswap/awgmi",
+  "license": "MIT",
+  "version": "1.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "sideEffects": false,
+  "dependencies": {
+    "@ethersproject/units": "^5.7.0",
+    "eventemitter3": "^4.0.7",
+    "use-sync-external-store": "^1.2.0",
+    "zustand": "^4.1.1"
+  },
+  "keywords": [
+    "pancakeswap",
+    "aptos",
+    "wallets"
+  ],
+  "peerDependencies": {
+    "@aptos-labs/ts-sdk": "1.x",
+    "@blocto/sdk": "^0.5.4",
+    "@msafe/aptos-wallet": "^3.0.6",
+    "@tanstack/react-query": "5.x",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@aptos-labs/ts-sdk": "1.12.2",
+    "@blocto/sdk": "^0.5.4",
+    "@msafe/aptos-wallet": "^3.0.6",
+    "@pancakeswap/tsconfig": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "@tanstack/react-query": "^5.28.4",
+    "@types/react": "^18.2.21",
+    "@types/use-sync-external-store": "^0.0.3",
+    "aptos": "1.21.0",
+    "happy-dom": "^13.3.8",
+    "tsup": "^6.7.0"
+  },
+  "files": [
+    "dist",
+    "connectors",
+    "core/package.json"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "rm -rf dist && tsup",
+    "test:u": "vitest -u --run",
+    "test": "vitest --run"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core.d.ts",
+      "import": "./dist/core.mjs",
+      "default": "./dist/core.js"
+    },
+    "./connectors/petra": {
+      "types": "./dist/connectors/petra.d.ts",
+      "import": "./dist/connectors/petra.mjs",
+      "default": "./dist/connectors/petra.js"
+    },
+    "./connectors/martian": {
+      "types": "./dist/connectors/martian.d.ts",
+      "import": "./dist/connectors/martian.mjs",
+      "default": "./dist/connectors/martian.js"
+    },
+    "./connectors/blocto": {
+      "types": "./dist/connectors/blocto.d.ts",
+      "import": "./dist/connectors/blocto.mjs",
+      "default": "./dist/connectors/blocto.js"
+    },
+    "./connectors/pontem": {
+      "types": "./dist/connectors/pontem.d.ts",
+      "import": "./dist/connectors/pontem.mjs",
+      "default": "./dist/connectors/pontem.js"
+    },
+    "./connectors/fewcha": {
+      "types": "./dist/connectors/fewcha.d.ts",
+      "import": "./dist/connectors/fewcha.mjs",
+      "default": "./dist/connectors/fewcha.js"
+    },
+    "./connectors/safePal": {
+      "types": "./dist/connectors/safePal.d.ts",
+      "import": "./dist/connectors/safePal.mjs",
+      "default": "./dist/connectors/safePal.js"
+    },
+    "./connectors/rise": {
+      "types": "./dist/connectors/rise.d.ts",
+      "import": "./dist/connectors/rise.mjs",
+      "default": "./dist/connectors/rise.js"
+    },
+    "./connectors/msafe": {
+      "types": "./dist/connectors/msafe.d.ts",
+      "import": "./dist/connectors/msafe.mjs",
+      "default": "./dist/connectors/msafe.js"
+    }
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "@blocto/sdk": {
+      "optional": true
+    },
+    "@msafe/aptos-wallet": {
+      "optional": true
+    }
+  }
+}

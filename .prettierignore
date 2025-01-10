@@ -1,0 +1,9 @@
+node_modules
+build
+apps/web/src/config/abi/types
+.next
+cli/aptos-codegen
+dist
+packages/farms/lists
+packages/smart-router/evm/abis/types
+packages/pools/src/abis/types

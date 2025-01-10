@@ -1,0 +1,36 @@
+name: Test Config
+
+on:
+  pull_request:
+    paths:
+      - 'apps/web/src/config/**'
+      - 'packages/pools/src/**'
+      - 'packages/farms/constants/**'
+      - 'packages/tokens/src/**'
+  push:
+    branches:
+      - develop
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [18]
+
+    name: Config (Jest)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install dependencies
+        uses: './.github/actions/install-deps'
+
+      - name: Run tests
+        run: pnpm test:config

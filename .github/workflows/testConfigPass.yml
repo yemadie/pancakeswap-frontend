@@ -1,0 +1,20 @@
+name: Test Config Pass
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'apps/web/src/config/**'
+      - 'packages/pools/src/**'
+      - 'packages/farms/constants/**'
+      - 'packages/tokens/src/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [18]
+    name: Config (Jest)
+    steps:
+      - run: 'echo "No Test Config required" '

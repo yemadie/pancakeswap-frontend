@@ -1,0 +1,41 @@
+{
+  "name": "@pancakeswap/pools",
+  "version": "5.1.32",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest --run",
+    "coverage": "vitest run --coverage",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "typechecks": "tsc --noEmit -p ./tsconfig.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "dependencies": {
+    "@pancakeswap/chains": "workspace:*",
+    "@pancakeswap/token-lists": "workspace:*",
+    "@pancakeswap/tokens": "workspace:*",
+    "bignumber.js": "^9.0.0",
+    "lodash": "^4.17.21",
+    "viem": "catalog:"
+  },
+  "devDependencies": {
+    "@pancakeswap/tsconfig": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "@types/lodash": "^4.14.168",
+    "tsup": "^6.7.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  }
+}

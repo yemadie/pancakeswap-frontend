@@ -1,0 +1,31 @@
+{
+  "name": "@pancakeswap/ifos",
+  "version": "3.0.18",
+  "sideEffects": false,
+  "private": true,
+  "scripts": {
+    "test": "vitest --run",
+    "test:u": "vitest -u --run"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@pancakeswap/sdk": "workspace:*",
+    "@pancakeswap/tokens": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "viem": "catalog:",
+    "wagmi": "catalog:"
+  },
+  "dependencies": {
+    "@layerzerolabs/scan-client": "^0.0.6",
+    "@pancakeswap/chains": "workspace:*",
+    "bignumber.js": "^9.0.0"
+  },
+  "devDependencies": {
+    "@pancakeswap/sdk": "workspace:*",
+    "@pancakeswap/tokens": "workspace:*",
+    "@pancakeswap/tsconfig": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "viem": "catalog:",
+    "wagmi": "catalog:"
+  }
+}

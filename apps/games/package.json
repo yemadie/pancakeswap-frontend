@@ -1,0 +1,48 @@
+{
+  "name": "games",
+  "version": "0.1.17",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3004",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@pancakeswap/blog": "workspace:*",
+    "@pancakeswap/chains": "workspace:*",
+    "@pancakeswap/games": "workspace:*",
+    "@pancakeswap/hooks": "workspace:*",
+    "@pancakeswap/localization": "workspace:*",
+    "@pancakeswap/uikit": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "@tanstack/react-query": "^5.28.4",
+    "@vanilla-extract/next-plugin": "^2.3.0",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "next": "14.2.5",
+    "next-seo": "^5.15.0",
+    "next-themes": "^0.2.1",
+    "qs": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-wrap-balancer": "^0.4.0",
+    "split-grid": "^1.0.11",
+    "styled-components": "6.0.7",
+    "swiper": "^11.0.5",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "14.2.3",
+    "@pancakeswap/next-config": "workspace:*",
+    "@pancakeswap/tsconfig": "workspace:*",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "18.0.4",
+    "@types/qs": "^6.0.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-system": "^5.1.17",
+    "eslint": "^8.32.0",
+    "eslint-plugin-lodash": "^7.4.0"
+  }
+}

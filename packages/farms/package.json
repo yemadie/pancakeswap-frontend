@@ -1,0 +1,31 @@
+{
+  "name": "@pancakeswap/farms",
+  "version": "1.0.74",
+  "sideEffects": false,
+  "private": true,
+  "scripts": {
+    "build": "npx tsx scripts/build.ts",
+    "update:snapshot": "vitest -u",
+    "test": "vitest --run"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "tsx": "^4.6.1",
+    "wrangler": "2.20.2"
+  },
+  "dependencies": {
+    "@pancakeswap/price-api-sdk": "workspace:*",
+    "@pancakeswap/chains": "workspace:*",
+    "@pancakeswap/sdk": "workspace:*",
+    "@pancakeswap/stable-swap-sdk": "workspace:*",
+    "@pancakeswap/swap-sdk-core": "workspace:*",
+    "@pancakeswap/token-lists": "workspace:*",
+    "@pancakeswap/tokens": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "@pancakeswap/v3-sdk": "workspace:*",
+    "bignumber.js": "^9.0.0",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "viem": "catalog:"
+  }
+}

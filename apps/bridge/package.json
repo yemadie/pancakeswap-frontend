@@ -1,0 +1,59 @@
+{
+  "name": "bridge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "browserslist": {
+    "production": [
+      "chrome >= 67",
+      "edge >= 79",
+      "firefox >= 68",
+      "opera >= 54",
+      "safari >= 14"
+    ],
+    "development": [
+      ">0.2%",
+      "not ie <= 99",
+      "not android <= 4.4.4",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@0xsquid/widget": "^1.6.0",
+    "@material-ui/core": "^4.12.4",
+    "@pancakeswap/chains": "workspace:^",
+    "@pancakeswap/hooks": "workspace:*",
+    "@pancakeswap/localization": "workspace:^",
+    "@pancakeswap/uikit": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "@vanilla-extract/next-plugin": "^2.3.0",
+    "@wagmi/core": "^0.10.11",
+    "@wormhole-foundation/wormhole-connect": "0.1.7",
+    "ethers": "^5.0.0",
+    "jotai": "^2.4.3",
+    "lodash": "^4.17.21",
+    "next": "14.2.5",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "6.0.7",
+    "styled-jsx": "5.1.1",
+    "viem": "catalog:",
+    "wagmi": "catalog:"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "14.2.3",
+    "@pancakeswap/next-config": "workspace:*",
+    "@pancakeswap/tsconfig": "workspace:*",
+    "@types/node": "18.0.4",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.32.0"
+  }
+}

@@ -1,0 +1,11 @@
+packages:
+  - 'packages/*'
+  - 'packages/routing-sdk/**'
+  - 'apps/*'
+  - 'apis/*'
+  - 'examples/*'
+  - 'scripts'
+
+catalog:
+  viem: ^2.20.0
+  wagmi: ^2.12.7

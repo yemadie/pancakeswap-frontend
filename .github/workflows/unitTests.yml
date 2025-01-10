@@ -1,0 +1,31 @@
+name: Unit Tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - develop
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [18]
+
+    name: Unit tests (Jest)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install dependencies
+        uses: './.github/actions/install-deps'
+
+      - name: Run tests
+        run: pnpm test:ci

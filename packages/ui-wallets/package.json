@@ -1,0 +1,23 @@
+{
+  "name": "@pancakeswap/ui-wallets",
+  "version": "0.0.2",
+  "main": "src/index.ts",
+  "sideEffects": [
+    "*.css.ts"
+  ],
+  "private": true,
+  "dependencies": {
+    "@pancakeswap/hooks": "workspace:*",
+    "@pancakeswap/localization": "workspace:*",
+    "@pancakeswap/uikit": "workspace:*",
+    "qrcode.react": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "@vanilla-extract/css": "^1.13.0",
+    "@types/react": "^18.2.21",
+    "swiper": "*",
+    "react-device-detect": "^2.1.2",
+    "jotai": "^2.2.2"
+  }
+}

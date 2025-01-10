@@ -1,0 +1,25 @@
+{
+  "name": "@pancakeswap/position-managers",
+  "version": "0.1.37",
+  "sideEffects": false,
+  "private": true,
+  "scripts": {
+    "test": "vitest --run"
+  },
+  "type": "module",
+  "dependencies": {
+    "@pancakeswap/chains": "workspace:*",
+    "@pancakeswap/sdk": "workspace:*",
+    "@pancakeswap/token-lists": "workspace:*",
+    "@pancakeswap/tokens": "workspace:*",
+    "@pancakeswap/v3-sdk": "workspace:*",
+    "bignumber.js": "^9.0.0",
+    "lodash": "^4.17.21",
+    "viem": "catalog:"
+  },
+  "devDependencies": {
+    "@pancakeswap/tsconfig": "workspace:*",
+    "@pancakeswap/utils": "workspace:*",
+    "@types/lodash": "^4.14.168"
+  }
+}
