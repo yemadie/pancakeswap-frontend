@@ -108,3 +108,5 @@ pnpm build:games
 | [smart-router](/packages/smart-router)     | An SDK for getting best trade routes.                                                                       |
 | [multicall](/packages/multicall)           | Enhanced multicall sdk to safely make multicalls within the gas limit.                                      |
 | [v3-sdk](/packages/v3-sdk)                 | An SDK for building applications on top of Pancakeswap V3.                                                  |
+
+This is useful frontend-sdk
